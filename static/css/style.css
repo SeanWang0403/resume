@@ -228,6 +228,10 @@ progress::-moz-progress-value {
 
 }
 
+.main div, .main ul, .main li{
+    color: black;
+}
+
 /*.info-header:hover {
     background-color: #d4dee4;
 }*/
@@ -302,6 +306,34 @@ ul li{
 
 .side h1, .side h2, .side h4, .side ul{
     color: #ffffff;
+}
+
+.text-with-hr {
+    text-align: center;
+    position: relative;
+    margin-left: -20px;
+    padding-top: 32px;
+    z-index: 2;
+}
+
+.text-with-hr:before {
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 0px;
+    width: 360px;
+    border: 20px solid rgb(146,208,81);
+    z-index: -1;
+}
+
+.text-with-hr span {
+    display: inline-block;
+    background: #2f5597;
+    font-size: 40px;
+    margin-left: 20px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
 }
 
 
